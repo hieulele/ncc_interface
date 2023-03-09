@@ -105,6 +105,7 @@ html{
 
 .wrap-item {
     float: left;
+    margin-right: 10px;
 }
 
 .img-item {
@@ -126,4 +127,8 @@ html{
     font-size: 1.2rem;
     color: #3E3E3E;
     border-top: 1px solid #DEDEDE;
+}
+
+.footer p {
+    margin-top: 14px;
 }
