@@ -4,13 +4,28 @@
         display: block;
     }
     .sidebar{
-        display: none;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: transform linear 0.2s, opacity linear 0.2s;
+        opacity: 0;
     }
     .sidebar.mobile-sidebar {
         display: block;
+        width: 200px;
         position: absolute;
         z-index: 9;
-        cursor: pointer
+        cursor: pointer;
+        animation: fadeIn linear 0.2s;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
     .news-wrap {
         display: block;
@@ -23,10 +38,10 @@
     }
     .bars-mobile.mobile{
         display: block;
-        font-size: 2.6rem;
-        margin: 10px;
         position: absolute;
+        margin: 10px;
         z-index: 99;
+        font-size: 2.6rem;
         cursor: pointer
     }
     .bars-mobile.display-none {
@@ -41,7 +56,7 @@
         cursor: pointer;
         color: #AAAAAA;
         top: -4px;
-        left: 120px;
+        left: 170px;
     }
     .closes-sidebar.mobile:hover {
         color: #fff;
