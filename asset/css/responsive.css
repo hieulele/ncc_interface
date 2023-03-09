@@ -1,21 +1,72 @@
 /* Mobile: width < 740px */
 @media only screen and (max-width: 739px){
+    .web-Ncc {
+        display: block;
+    }
     .sidebar{
         display: none;
     }
+    .sidebar.mobile-sidebar {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        cursor: pointer
+    }
     .news-wrap {
+        display: block;
+    }
+    .container {
+        margin: 0;
+    }
+    .wrap-item {
+        margin-bottom: 20px;
+    }
+    .bars-mobile.mobile{
+        display: block;
+        font-size: 2.6rem;
+        margin: 10px;
+        position: absolute;
+        z-index: 99;
+        cursor: pointer
+    }
+    .bars-mobile.display-none {
+        display: none;
+    }
+    .closes-sidebar.mobile {
+        display: none;
+        font-size: 1.8rem;
+        padding: 10px;
+        position: absolute;
+        z-index: 99;
+        cursor: pointer;
+        color: #AAAAAA;
+        top: -4px;
+        left: 120px;
+    }
+    .closes-sidebar.mobile:hover {
+        color: #fff;
+    }
+    .closes-sidebar.display-block {
         display: block;
     }
 }
 
 /* Table: width >=740px and width <1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px){
-    
+    .bars-mobile {
+        display: none;
+    }
+    .closes-sidebar {
+        display: none;
+    }
 }
 
 /* PC: width >=1024px */
 @media only screen and (min-width: 1024px){
-    .pc{
-        display: block;
+    .bars-mobile {
+        display: none;
+    }
+    .closes-sidebar {
+        display: none;
     }
 }
