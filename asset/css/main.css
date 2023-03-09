@@ -8,23 +8,6 @@ html{
     box-sizing: border-box;
 }
 
-/* Responsive */
-
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid__row{
-    margin-left: -5px;
-    margin-right: -5px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .web-Ncc {
     overflow: hidden;
     display: flex;
@@ -90,8 +73,8 @@ html{
 
 .introduce-news {
     margin: 30px auto;
-    padding: 0 129px;
-    height: 210px;
+    padding: 0 129px 10px;
+    min-height: 210px;
     background-color: #EFEFEF;
     line-height: 2rem;
     text-align: center;
@@ -108,18 +91,7 @@ html{
 }
 
 .news-wrap {
-}
-
-.row .no-gutters {
-    
-}
-
-.c-4 {
     display: flex;
-}
-
-.col .l-4 .c-6 {
-
 }
 
 .news-item {
