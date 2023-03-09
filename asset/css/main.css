@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-Ncc {
+    overflow: hidden;
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #333;
+}
+
+.category-list {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.category-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 44px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+    border-bottom: 1px solid #5C5C5C;
+}
+
+.category-item a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+.category-item:hover a{
+    cursor: pointer;
+    color: #fff;
+}
+
+.category-item.active a{
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 80px;
+}
+
+.logo {
+    width: 310px;
+    height: 122px;
+    margin-top: 20px;
+}
+
+.content {
+
+}
+
+.introduce-news {
+    margin: 30px auto;
+    padding: 0 129px;
+    height: 210px;
+    background-color: #EFEFEF;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.title-introduce {
+    padding-top: 12px;
+    font-size: 1.5rem;
+}
+
+.introduce-news p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.news-wrap {
+}
+
+.row .no-gutters {
+    
+}
+
+.c-4 {
+    display: flex;
+}
+
+.col .l-4 .c-6 {
+
+}
+
+.news-item {
+    margin-right: 10px;
+}
+
+.title-news {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.wrap-item {
+    float: left;
+}
+
+.img-item {
+    display: inline-block;
+    width: 100px;
+    margin-right: 6px;
+}
+
+.content-news {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 12px;
+    float: left;
+    font-size: 1.2rem;
+    color: #3E3E3E;
+    border-top: 1px solid #DEDEDE;
+}
